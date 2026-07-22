@@ -64,11 +64,16 @@ header p{
     border-color: var(--blanco);
 }
 
-nav a:link,
-nav a:visited{
-    color: var(--blanco);
-    text-decoration:none;
+.menu{
+    background-color: #0b1f33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 12px 20px;
 }
+
 
 
 .portada{
@@ -220,4 +225,23 @@ nav a:visited{
     border-radius: 8px;
     padding: 25px 15px;
     text-align: center;
+}
+
+@media (max-width: 768px){
+
+    .menu{
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .menu a{
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border: 2px solid var(--azul);
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.08);
+        font-size: 18px;
+    }
+
 }
